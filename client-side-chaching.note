@@ -1,9 +1,14 @@
 Redis Client Side Caching
 
-Client Side Caching is a technique used to create high performance services. It exploits the memory available on client side, to store some subset of the database information directly in the client side.
+Client Side Caching is a technique used to create high performance services. It exploits the memory available on client side, 
+to store some subset of the database information directly in the client side.
 
-Normally client application will directly query any information from database. But when client side scripting is used client application will store popular queries inside application memory, so these popular queries can be reused without contacting the database.
+Normally client application will directly query any information from database. But when client side scripting is used client 
+application will store popular queries inside application memory, so these popular queries can be reused without contacting 
+the database.
 
-Since the same small percentage of data are accessed frequently, this pattern can greatly reduce the latency for the application to get data and, at the same time, the load in the database side. 
+Since the same small percentage of data are accessed frequently, this pattern can greatly reduce the latency for the application 
+to get data and, at the same time, the load in the database side. 
 
-This concept is called Locality of reference. It refers to a phenomenon in which a computer program tends to access same set of memory locations for a particular time period.
+This concept is called Locality of reference. It refers to a phenomenon in which a computer program tends to access same set of
+memory locations for a particular time period.
